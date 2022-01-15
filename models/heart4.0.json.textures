@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "voxels_palette": "heart4"
+      },
+      "name": "default"
+    }
+  }
+}

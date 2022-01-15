@@ -1,0 +1,250 @@
+{
+  "mod_elements": [
+    {
+      "name": "BlueTuna",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_tuna"
+    },
+    {
+      "name": "CookedBlueTuna",
+      "type": "food",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_blue_tuna"
+    },
+    {
+      "name": "BlueTunaLootTable",
+      "type": "loottable",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_tuna_loot_table"
+    },
+    {
+      "name": "CookedTunaRecipe",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_tuna_recipe"
+    },
+    {
+      "name": "HeartCrystalItem",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_crystal_item"
+    },
+    {
+      "name": "HeartCrystalItemRightClickedInAir",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_crystal_item_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HeartCrystal",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_crystal"
+    },
+    {
+      "name": "SaveHealth",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save_health",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HeartCrystalDebugCommandExecuted",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_crystal_debug_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HeartCrystalDebug",
+      "type": "command",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_crystal_debug"
+    },
+    {
+      "name": "HeartCrystalAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_crystal_additional_generation_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HeartCrystalStructure",
+      "type": "structure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_crystal_structure"
+    },
+    {
+      "name": "HermesBoots",
+      "type": "armor",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hermes_boots",
+      "metadata": {
+        "eh": false,
+        "el": false,
+        "eb": true,
+        "ec": false
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "LastSavedMaxHealth",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "20.0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.subsist.hermes_boots_helmet": "Hermes Boots Helmet",
+      "item.subsist.blue_tuna": "Blue Tuna",
+      "item.subsist.heart_crystal_item": "Heart Crystal",
+      "item.subsist.cooked_blue_tuna": "Cooked Blue Tuna",
+      "block.subsist.heart_crystal": "Heart Crystal",
+      "item.subsist.hermes_boots_leggings": "Hermes Boots Leggings",
+      "item.subsist.hermes_boots_boots": "Hermes Boots",
+      "item.subsist.hermes_boots_chestplate": "Hermes Boots Body"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "subsist",
+    "modName": "Subsist",
+    "version": "1.0.0",
+    "author": "infec, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.17.1",
+    "modElementsPackage": "net.mcreator.subsist",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100353117
+}

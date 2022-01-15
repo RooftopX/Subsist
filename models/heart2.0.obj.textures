@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "Element": "heart2.0_"
+      },
+      "name": "default"
+    }
+  }
+}

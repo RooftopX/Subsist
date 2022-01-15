@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "voxels_palette": "voxels_pallete_heart"
+      },
+      "name": "default"
+    }
+  }
+}

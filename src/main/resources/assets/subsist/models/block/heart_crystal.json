@@ -1,0 +1,8 @@
+{
+  "parent": "subsist:custom/heart4.0",
+  "textures": {
+    "all": "subsist:blocks/heart4",
+    "particle": "subsist:blocks/heart4",
+    "voxels_palette": "subsist:blocks/heart4"
+  }
+}
