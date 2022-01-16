@@ -266,6 +266,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "hellstone_ingot"
+<<<<<<< HEAD
     },
     {
       "name": "HellstoneOreBlockDestroyedByPlayer",
@@ -294,6 +295,8 @@
           }
         ]
       }
+=======
+>>>>>>> parent of 6cb3085 (Basic Accessories Menu implementation)
     }
   ],
   "variable_elements": [
