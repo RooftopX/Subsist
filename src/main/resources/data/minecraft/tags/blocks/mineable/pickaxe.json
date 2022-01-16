@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "subsist:heart_crystal"
+    "subsist:heart_crystal",
+    "subsist:hellstone_ore"
   ]
 }

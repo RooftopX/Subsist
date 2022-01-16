@@ -14,6 +14,8 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.subsist.item.HermesBootsItem;
+import net.mcreator.subsist.item.HellstoneRawItem;
+import net.mcreator.subsist.item.HellstoneIngotItem;
 import net.mcreator.subsist.item.HeartCrystalItemItem;
 import net.mcreator.subsist.item.CookedBlueTunaItem;
 import net.mcreator.subsist.item.BlueTunaItem;
@@ -29,6 +31,9 @@ public class SubsistModItems {
 	public static final Item HEART_CRYSTAL_ITEM = register(new HeartCrystalItemItem());
 	public static final Item HEART_CRYSTAL = register(SubsistModBlocks.HEART_CRYSTAL, CreativeModeTab.TAB_FOOD);
 	public static final Item HERMES_BOOTS_BOOTS = register(new HermesBootsItem.Boots());
+	public static final Item HELLSTONE_ORE = register(SubsistModBlocks.HELLSTONE_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item HELLSTONE_RAW = register(new HellstoneRawItem());
+	public static final Item HELLSTONE_INGOT = register(new HellstoneIngotItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

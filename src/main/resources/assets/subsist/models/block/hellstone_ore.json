@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "subsist:blocks/nether_hellstone_ore",
+    "up": "subsist:blocks/nether_hellstone_ore",
+    "north": "subsist:blocks/nether_hellstone_ore",
+    "east": "subsist:blocks/nether_hellstone_ore",
+    "south": "subsist:blocks/nether_hellstone_ore",
+    "west": "subsist:blocks/nether_hellstone_ore",
+    "particle": "subsist:blocks/nether_hellstone_ore"
+  }
+}
