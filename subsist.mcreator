@@ -274,6 +274,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "testite_mp_lswork"
+    },
+    {
+      "name": "TestingItemLOL",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testing_item_lol"
     }
   ],
   "variable_elements": [
@@ -300,6 +308,7 @@
       "item.subsist.cooked_blue_tuna": "Cooked Blue Tuna",
       "subtitles.hermesbootssprintsound": "Herme\u0027s Boots Sprints",
       "item.subsist.hermes_boots_boots": "Hermes Boots",
+      "item.subsist.testing_item_lol": "Testing Item LOL",
       "item.subsist.hermes_boots_helmet": "Hermes Boots Helmet",
       "block.subsist.hellstone_ore": "Hellstone Ore",
       "item.subsist.testite_mp_lswork": "TESTITE Mp LSWORK",
