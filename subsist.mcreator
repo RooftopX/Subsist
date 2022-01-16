@@ -266,6 +266,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "hellstone_ingot"
+<<<<<<< Updated upstream
     },
     {
       "name": "TestItem2",
@@ -274,6 +275,8 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "test_item_2"
+=======
+>>>>>>> Stashed changes
     }
   ],
   "variable_elements": [
