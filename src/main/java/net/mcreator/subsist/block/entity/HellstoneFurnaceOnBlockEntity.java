@@ -32,12 +32,12 @@ import java.util.stream.IntStream;
 
 import io.netty.buffer.Unpooled;
 
-public class HellstoneFurnaceBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
+public class HellstoneFurnaceOnBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
+	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(3, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
-	public HellstoneFurnaceBlockEntity(BlockPos position, BlockState state) {
-		super(SubsistModBlockEntities.HELLSTONE_FURNACE, position, state);
+	public HellstoneFurnaceOnBlockEntity(BlockPos position, BlockState state) {
+		super(SubsistModBlockEntities.HELLSTONE_FURNACE_ON, position, state);
 	}
 
 	@Override
@@ -87,7 +87,7 @@ public class HellstoneFurnaceBlockEntity extends RandomizableContainerBlockEntit
 
 	@Override
 	public Component getDefaultName() {
-		return new TextComponent("hellstone_furnace");
+		return new TextComponent("hellstone_furnace_on");
 	}
 
 	@Override
@@ -134,6 +134,10 @@ public class HellstoneFurnaceBlockEntity extends RandomizableContainerBlockEntit
 
 	@Override
 	public boolean canTakeItemThroughFace(int index, ItemStack stack, Direction direction) {
+		if (index == 0)
+			return false;
+		if (index == 1)
+			return false;
 		return true;
 	}
 

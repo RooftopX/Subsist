@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.subsist.block.HellstonebrickBlock;
 import net.mcreator.subsist.block.HellstoneOreBlock;
+import net.mcreator.subsist.block.HellstoneFurnaceOnBlock;
 import net.mcreator.subsist.block.HellstoneFurnaceBlock;
 import net.mcreator.subsist.block.HeartCrystalBlock;
 
@@ -27,6 +28,7 @@ public class SubsistModBlocks {
 	public static final Block HELLSTONE_ORE = register(new HellstoneOreBlock());
 	public static final Block HELLSTONEBRICK = register(new HellstonebrickBlock());
 	public static final Block HELLSTONE_FURNACE = register(new HellstoneFurnaceBlock());
+	public static final Block HELLSTONE_FURNACE_ON = register(new HellstoneFurnaceOnBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);

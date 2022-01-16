@@ -2,6 +2,8 @@
 package net.mcreator.subsist.block;
 
 import net.minecraftforge.fmllegacy.network.NetworkHooks;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
@@ -35,27 +37,31 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.subsist.world.inventory.HellstoneFurnaceGUIMenu;
-import net.mcreator.subsist.block.entity.HellstoneFurnaceBlockEntity;
+import net.mcreator.subsist.procedures.HellstoneFurnaceUpdateTickProcedure;
+import net.mcreator.subsist.block.entity.HellstoneFurnaceOnBlockEntity;
 
+import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-public class HellstoneFurnaceBlock extends Block
+public class HellstoneFurnaceOnBlock extends Block
 		implements
 
 			EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
-	public HellstoneFurnaceBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3.5f).requiresCorrectToolForDrops());
+	public HellstoneFurnaceOnBlock() {
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3.5f, 10f).requiresCorrectToolForDrops());
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
-		setRegistryName("hellstone_furnace");
+		setRegistryName("hellstone_furnace_on");
 	}
 
 	@Override
@@ -107,6 +113,22 @@ public class HellstoneFurnaceBlock extends Block
 		return Collections.singletonList(new ItemStack(this, 1));
 	}
 
+	@OnlyIn(Dist.CLIENT)
+	@Override
+	public void animateTick(BlockState blockstate, Level world, BlockPos pos, Random random) {
+		super.animateTick(blockstate, world, pos, random);
+		Player entity = Minecraft.getInstance().player;
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		for (int l = 0; l < 4; ++l) {
+			double x0 = x + 0.5 + (random.nextFloat() - 0.5) * 0.5D;
+			double y0 = y + 1.2 + (random.nextFloat() - 0.5) * 0.5D;
+			double z0 = z + 0.5 + (random.nextFloat() - 0.5) * 0.5D;
+			world.addParticle(ParticleTypes.SMOKE, x0, y0, z0, 0, 0, 0);
+		}
+	}
+
 	@Override
 	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
 		super.use(blockstate, world, pos, entity, hand, hit);
@@ -123,6 +145,15 @@ public class HellstoneFurnaceBlock extends Block
 				}
 			}, pos);
 		}
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		double hitX = hit.getLocation().x;
+		double hitY = hit.getLocation().y;
+		double hitZ = hit.getLocation().z;
+		Direction direction = hit.getDirection();
+
+		HellstoneFurnaceUpdateTickProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}
 
@@ -134,7 +165,7 @@ public class HellstoneFurnaceBlock extends Block
 
 	@Override
 	public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-		return new HellstoneFurnaceBlockEntity(pos, state);
+		return new HellstoneFurnaceOnBlockEntity(pos, state);
 	}
 
 	@Override
@@ -148,7 +179,7 @@ public class HellstoneFurnaceBlock extends Block
 	public void onRemove(BlockState state, Level world, BlockPos pos, BlockState newState, boolean isMoving) {
 		if (state.getBlock() != newState.getBlock()) {
 			BlockEntity blockEntity = world.getBlockEntity(pos);
-			if (blockEntity instanceof HellstoneFurnaceBlockEntity be) {
+			if (blockEntity instanceof HellstoneFurnaceOnBlockEntity be) {
 				Containers.dropContents(world, pos, be);
 				world.updateNeighbourForOutputSignal(pos, this);
 			}
@@ -164,7 +195,7 @@ public class HellstoneFurnaceBlock extends Block
 	@Override
 	public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos) {
 		BlockEntity tileentity = world.getBlockEntity(pos);
-		if (tileentity instanceof HellstoneFurnaceBlockEntity be)
+		if (tileentity instanceof HellstoneFurnaceOnBlockEntity be)
 			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
 		else
 			return 0;

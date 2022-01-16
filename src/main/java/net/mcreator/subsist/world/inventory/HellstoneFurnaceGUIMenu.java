@@ -75,9 +75,9 @@ public class HellstoneFurnaceGUIMenu extends AbstractContainerMenu implements Su
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 61, 17) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 61, 17) {
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 61, 53) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 61, 53) {
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 97, 35) {
 			@Override

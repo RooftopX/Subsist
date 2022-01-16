@@ -4,6 +4,7 @@
     "subsist:heart_crystal",
     "subsist:hellstone_ore",
     "subsist:hellstonebrick",
-    "subsist:hellstone_furnace"
+    "subsist:hellstone_furnace",
+    "subsist:hellstone_furnace_on"
   ]
 }

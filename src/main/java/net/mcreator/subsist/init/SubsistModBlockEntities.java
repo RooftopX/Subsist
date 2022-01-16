@@ -11,6 +11,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.subsist.block.entity.HellstoneFurnaceOnBlockEntity;
 import net.mcreator.subsist.block.entity.HellstoneFurnaceBlockEntity;
 
 import java.util.List;
@@ -21,6 +22,8 @@ public class SubsistModBlockEntities {
 	private static final List<BlockEntityType<?>> REGISTRY = new ArrayList<>();
 	public static final BlockEntityType<?> HELLSTONE_FURNACE = register("subsist:hellstone_furnace", SubsistModBlocks.HELLSTONE_FURNACE,
 			HellstoneFurnaceBlockEntity::new);
+	public static final BlockEntityType<?> HELLSTONE_FURNACE_ON = register("subsist:hellstone_furnace_on", SubsistModBlocks.HELLSTONE_FURNACE_ON,
+			HellstoneFurnaceOnBlockEntity::new);
 
 	private static BlockEntityType<?> register(String registryname, Block block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		BlockEntityType<?> blockEntityType = BlockEntityType.Builder.of(supplier, block).build(null).setRegistryName(registryname);

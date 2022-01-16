@@ -328,14 +328,135 @@
       "registry_name": "hellstone_furnace_gui"
     },
     {
-      "name": "HellstoneFurnaceProdedure",
-      "type": "procedure",
+      "name": "HellstoneFurnaceOn",
+      "type": "block",
       "sortid": 30,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "hellstone_furnace_prodedure",
+      "registry_name": "hellstone_furnace_on"
+    },
+    {
+      "name": "HellstoneCookRecipe",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellstone_cook_recipe",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HellstoneFurnaceUpdateTick",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellstone_furnace_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FurnaceFuel",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_fuel",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExpRewardHellstone",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exp_reward_hellstone",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     }
   ],
@@ -371,6 +492,7 @@
       "item.subsist.hellstone_ingot": "Hellstone Ingot",
       "block.subsist.heart_crystal": "Heart Crystal",
       "item.subsist.hermes_boots_leggings": "Hermes Boots Leggings",
+      "block.subsist.hellstone_furnace_on": "Hellstone Furnace",
       "subtitles.hermesbootsound": "Herme\"s Boots Sprinting",
       "item.subsist.hellstone_raw": "Raw Hellstone",
       "item.subsist.hermes_boots_chestplate": "Hermes Boots Body"

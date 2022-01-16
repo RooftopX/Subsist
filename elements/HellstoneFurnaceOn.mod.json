@@ -5,7 +5,7 @@
     "texture": "hellstone_furnace_top",
     "textureTop": "hellstone_furnace_top",
     "textureLeft": "hellstone_furnace_side",
-    "textureFront": "hellstone_furnace_front",
+    "textureFront": "animatedhellstonefurnace",
     "textureRight": "hellstone_furnace_side",
     "textureBack": "hellstone_furnace_side",
     "renderType": 10,
@@ -35,7 +35,7 @@
     "name": "Hellstone Furnace",
     "specialInfo": [],
     "hardness": 3.5,
-    "resistance": 3.5,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -97,24 +97,27 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 4,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "CUSTOM:Hermesbootscloud"
+      "value": "SMOKE_NORMAL"
     },
-    "particleSpawningShape": "Spread",
+    "particleSpawningShape": "Top",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasInventory": true,
     "guiBoundTo": "HellstoneFurnaceGUI",
     "openGUIOnRightClick": true,
-    "inventorySize": 9,
+    "inventorySize": 3,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [
       2
     ],
-    "inventoryInSlotIDs": [],
+    "inventoryInSlotIDs": [
+      0,
+      1
+    ],
     "hasEnergyStorage": false,
     "energyInitial": 0,
     "energyCapacity": 400000,
@@ -123,6 +126,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "HellstoneFurnaceUpdateTick"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
