@@ -9,11 +9,11 @@
     "enableLeggings": false,
     "textureLeggings": "",
     "enableBoots": true,
-    "textureBoots": "hermesbootsarmortexture_boots",
+    "textureBoots": "hermesbootitemtexture",
     "creativeTab": {
       "value": "COMBAT"
     },
-    "armorTextureFile": "hermesbootsarmortexture",
+    "armorTextureFile": "hermesboots1",
     "helmetName": "Hermes Boots Helmet",
     "bodyName": "Hermes Boots Body",
     "leggingsName": "Hermes Boots Leggings",
@@ -21,9 +21,7 @@
     "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],
-    "bootsSpecialInfo": [
-      "Can make the user run super fast!"
-    ],
+    "bootsSpecialInfo": [],
     "helmetModelName": "Default",
     "helmetModelPart": "Helmet",
     "helmetModelTexture": "From armor",
@@ -36,32 +34,25 @@
     "leggingsModelPartL": "Leggings L",
     "leggingsModelPartR": "Leggings R",
     "leggingsModelTexture": "From armor",
-    "bootsModelName": "Default",
-    "bootsModelPartL": "Boots L",
-    "bootsModelPartR": "Boots R",
-    "bootsModelTexture": "From armor",
+    "bootsModelName": "Modelhermesboots",
+    "bootsModelPartL": "LeftBoot",
+    "bootsModelPartR": "RightBoot",
+    "bootsModelTexture": "hermesbootstexturefinal.png",
     "helmetImmuneToFire": false,
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
-    "bootsImmuneToFire": true,
+    "bootsImmuneToFire": false,
     "maxDamage": 25,
-    "damageValueHelmet": 0,
-    "damageValueBody": 0,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
     "damageValueLeggings": 5,
     "damageValueBoots": 2,
     "enchantability": 9,
     "toughness": 0.0,
     "knockbackResistance": 0.0,
     "equipSound": {
-      "value": "item.armor.equip_leather"
+      "value": ""
     },
-    "repairItems": [
-      {
-        "value": "Items.FEATHER"
-      },
-      {
-        "value": "Items.PHANTOM_MEMBRANE"
-      }
-    ]
+    "repairItems": []
   }
 }
