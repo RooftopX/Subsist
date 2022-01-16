@@ -266,6 +266,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "hellstone_ingot"
+    },
+    {
+      "name": "TESTITEMpLSWORK",
+      "type": "item",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testite_mp_lswork"
     }
   ],
   "variable_elements": [
@@ -294,6 +302,7 @@
       "item.subsist.hermes_boots_boots": "Hermes Boots",
       "item.subsist.hermes_boots_helmet": "Hermes Boots Helmet",
       "block.subsist.hellstone_ore": "Hellstone Ore",
+      "item.subsist.testite_mp_lswork": "TESTITE Mp LSWORK",
       "item.subsist.blue_tuna": "Blue Tuna",
       "item.subsist.hellstone_ingot": "Hellstone Ingot",
       "block.subsist.heart_crystal": "Heart Crystal",
