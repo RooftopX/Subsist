@@ -121,6 +121,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onDestroyedByPlayer": {
+      "name": "HellstoneOreBlockDestroyedByPlayer"
+    },
     "spawnWorldTypes": [
       "Nether"
     ],
@@ -130,9 +133,9 @@
         "value": "Blocks.NETHERRACK"
       }
     ],
-    "frequencyPerChunks": 5,
+    "frequencyPerChunks": 1,
     "frequencyOnChunk": 8,
     "minGenerateHeight": 5,
-    "maxGenerateHeight": 32
+    "maxGenerateHeight": 35
   }
 }

@@ -27,7 +27,7 @@ public class HellstoneOreFeature extends OreFeature {
 	public static final HellstoneOreFeature FEATURE = (HellstoneOreFeature) new HellstoneOreFeature().setRegistryName("subsist:hellstone_ore");
 	public static final ConfiguredFeature<?, ?> CONFIGURED_FEATURE = FEATURE
 			.configured(new OreConfiguration(HellstoneOreFeatureRuleTest.INSTANCE, SubsistModBlocks.HELLSTONE_ORE.defaultBlockState(), 8))
-			.range(new RangeDecoratorConfiguration(UniformHeight.of(VerticalAnchor.absolute(5), VerticalAnchor.absolute(32)))).squared().count(5);
+			.range(new RangeDecoratorConfiguration(UniformHeight.of(VerticalAnchor.absolute(5), VerticalAnchor.absolute(35)))).squared().count(1);
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
 
 	public HellstoneOreFeature() {
