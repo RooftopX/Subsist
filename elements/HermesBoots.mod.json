@@ -9,7 +9,10 @@
     "enableLeggings": false,
     "textureLeggings": "",
     "enableBoots": true,
-    "textureBoots": "hermesbootitemtexture",
+    "textureBoots": "hermesbooticonv3",
+    "onBootsTick": {
+      "name": "HermesBootsBootsTickEvent"
+    },
     "creativeTab": {
       "value": "COMBAT"
     },
@@ -41,17 +44,17 @@
     "helmetImmuneToFire": false,
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
-    "bootsImmuneToFire": false,
+    "bootsImmuneToFire": true,
     "maxDamage": 25,
     "damageValueHelmet": 2,
     "damageValueBody": 6,
     "damageValueLeggings": 5,
     "damageValueBoots": 2,
-    "enchantability": 9,
+    "enchantability": 0,
     "toughness": 0.0,
     "knockbackResistance": 0.0,
     "equipSound": {
-      "value": ""
+      "value": "item.armor.equip_chain"
     },
     "repairItems": []
   }

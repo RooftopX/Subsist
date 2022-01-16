@@ -6,12 +6,14 @@ import net.minecraftforge.client.IItemRenderProperties;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -21,6 +23,7 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.subsist.procedures.HermesBootsBootsTickEventProcedure;
 import net.mcreator.subsist.client.model.Modelhermesboots;
 
 import java.util.Map;
@@ -41,12 +44,12 @@ public abstract class HermesBootsItem extends ArmorItem {
 
 			@Override
 			public int getEnchantmentValue() {
-				return 9;
+				return 0;
 			}
 
 			@Override
 			public SoundEvent getEquipSound() {
-				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
+				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.armor.equip_chain"));
 			}
 
 			@Override
@@ -73,7 +76,7 @@ public abstract class HermesBootsItem extends ArmorItem {
 
 	public static class Boots extends HermesBootsItem {
 		public Boots() {
-			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
 			setRegistryName("hermes_boots_boots");
 		}
 
@@ -102,6 +105,11 @@ public abstract class HermesBootsItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "subsist:textures/hermesbootstexturefinal.png";
+		}
+
+		@Override
+		public void onArmorTick(ItemStack itemstack, Level world, Player entity) {
+			HermesBootsBootsTickEventProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 		}
 	}
 }

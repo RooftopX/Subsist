@@ -202,6 +202,38 @@
         "eb": true,
         "ec": false
       }
+    },
+    {
+      "name": "HermesBootsBootsTickEvent",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hermes_boots_boots_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -215,13 +247,13 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.subsist.heart_crystal_item": "Heart Crystal",
-      "item.subsist.cooked_blue_tuna": "Cooked Blue Tuna",
-      "item.subsist.hermes_boots_boots": "Hermes Boots",
       "item.subsist.hermes_boots_helmet": "Hermes Boots Helmet",
+      "item.subsist.heart_crystal_item": "Heart Crystal",
       "item.subsist.blue_tuna": "Blue Tuna",
+      "item.subsist.cooked_blue_tuna": "Cooked Blue Tuna",
       "block.subsist.heart_crystal": "Heart Crystal",
       "item.subsist.hermes_boots_leggings": "Hermes Boots Leggings",
+      "item.subsist.hermes_boots_boots": "Hermes Boots",
       "item.subsist.hermes_boots_chestplate": "Hermes Boots Body"
     }
   },
