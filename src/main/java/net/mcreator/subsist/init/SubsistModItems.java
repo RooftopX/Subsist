@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.subsist.item.TESTITEMpLSWORKItem;
 import net.mcreator.subsist.item.HermesBootsItem;
 import net.mcreator.subsist.item.HellstoneRawItem;
 import net.mcreator.subsist.item.HellstoneIngotItem;
@@ -34,6 +35,7 @@ public class SubsistModItems {
 	public static final Item HELLSTONE_ORE = register(SubsistModBlocks.HELLSTONE_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final Item HELLSTONE_RAW = register(new HellstoneRawItem());
 	public static final Item HELLSTONE_INGOT = register(new HellstoneIngotItem());
+	public static final Item TESTITE_MP_LSWORK = register(new TESTITEMpLSWORKItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
