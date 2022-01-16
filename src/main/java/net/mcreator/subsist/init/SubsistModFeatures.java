@@ -16,6 +16,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.data.BuiltinRegistries;
 import net.minecraft.core.Registry;
 
+import net.mcreator.subsist.world.features.ores.HellstoneOreFeature;
 import net.mcreator.subsist.world.features.HeartCrystalStructureFeature;
 
 import java.util.Set;
@@ -28,6 +29,8 @@ public class SubsistModFeatures {
 	static {
 		REGISTRY.put(HeartCrystalStructureFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_STRUCTURES,
 				HeartCrystalStructureFeature.GENERATE_BIOMES, HeartCrystalStructureFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(HellstoneOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
+				HellstoneOreFeature.GENERATE_BIOMES, HellstoneOreFeature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent

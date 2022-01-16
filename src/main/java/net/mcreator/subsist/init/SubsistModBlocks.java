@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.subsist.block.HellstoneOreBlock;
 import net.mcreator.subsist.block.HeartCrystalBlock;
 
 import java.util.List;
@@ -21,6 +22,7 @@ import java.util.ArrayList;
 public class SubsistModBlocks {
 	private static final List<Block> REGISTRY = new ArrayList<>();
 	public static final Block HEART_CRYSTAL = register(new HeartCrystalBlock());
+	public static final Block HELLSTONE_ORE = register(new HellstoneOreBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);

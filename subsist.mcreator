@@ -242,6 +242,30 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "hermesbootscloud"
+    },
+    {
+      "name": "HellstoneOre",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellstone_ore"
+    },
+    {
+      "name": "HellstoneRaw",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellstone_raw"
+    },
+    {
+      "name": "HellstoneIngot",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellstone_ingot"
     }
   ],
   "variable_elements": [
@@ -264,15 +288,18 @@
   ],
   "language_map": {
     "en_us": {
-      "item.subsist.hermes_boots_helmet": "Hermes Boots Helmet",
       "item.subsist.heart_crystal_item": "Heart Crystal",
-      "item.subsist.blue_tuna": "Blue Tuna",
       "item.subsist.cooked_blue_tuna": "Cooked Blue Tuna",
+      "subtitles.hermesbootssprintsound": "Herme\u0027s Boots Sprints",
+      "item.subsist.hermes_boots_boots": "Hermes Boots",
+      "item.subsist.hermes_boots_helmet": "Hermes Boots Helmet",
+      "block.subsist.hellstone_ore": "Hellstone Ore",
+      "item.subsist.blue_tuna": "Blue Tuna",
+      "item.subsist.hellstone_ingot": "Hellstone Ingot",
       "block.subsist.heart_crystal": "Heart Crystal",
       "item.subsist.hermes_boots_leggings": "Hermes Boots Leggings",
       "subtitles.hermesbootsound": "Herme\"s Boots Sprinting",
-      "subtitles.hermesbootssprintsound": "Herme\u0027s Boots Sprints",
-      "item.subsist.hermes_boots_boots": "Hermes Boots",
+      "item.subsist.hellstone_raw": "Raw Hellstone",
       "item.subsist.hermes_boots_chestplate": "Hermes Boots Body"
     }
   },
