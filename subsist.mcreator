@@ -266,6 +266,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "hellstone_ingot"
+    },
+    {
+      "name": "TestItem2",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_item_2"
     }
   ],
   "variable_elements": [
@@ -300,6 +308,7 @@
       "item.subsist.hermes_boots_leggings": "Hermes Boots Leggings",
       "subtitles.hermesbootsound": "Herme\"s Boots Sprinting",
       "item.subsist.hellstone_raw": "Raw Hellstone",
+      "block.subsist.test_item_2": "Test Item 2",
       "item.subsist.hermes_boots_chestplate": "Hermes Boots Body"
     }
   },
