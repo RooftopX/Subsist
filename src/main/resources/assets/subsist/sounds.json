@@ -1,0 +1,12 @@
+{
+  "hermesbootsound": {
+    "category": "player",
+    "subtitle": "subtitles.hermesbootsound",
+    "sounds": [
+      {
+        "name": "subsist:hermes-boots-sprint-soundv2",
+        "stream": false
+      }
+    ]
+  }
+}

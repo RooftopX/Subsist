@@ -234,6 +234,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "Hermesbootscloud",
+      "type": "particle",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hermesbootscloud"
     }
   ],
   "variable_elements": [
@@ -244,7 +252,16 @@
       "value": "20.0"
     }
   ],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "hermesbootsound",
+      "files": [
+        "hermes-boots-sprint-soundv2"
+      ],
+      "category": "player",
+      "subtitle": "Herme\"s Boots Sprinting"
+    }
+  ],
   "language_map": {
     "en_us": {
       "item.subsist.hermes_boots_helmet": "Hermes Boots Helmet",
@@ -253,6 +270,8 @@
       "item.subsist.cooked_blue_tuna": "Cooked Blue Tuna",
       "block.subsist.heart_crystal": "Heart Crystal",
       "item.subsist.hermes_boots_leggings": "Hermes Boots Leggings",
+      "subtitles.hermesbootsound": "Herme\"s Boots Sprinting",
+      "subtitles.hermesbootssprintsound": "Herme\u0027s Boots Sprints",
       "item.subsist.hermes_boots_boots": "Hermes Boots",
       "item.subsist.hermes_boots_chestplate": "Hermes Boots Body"
     }
