@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "subsist:blocks/heart4",
+    "up": "subsist:blocks/heart4",
+    "north": "subsist:blocks/heart4",
+    "east": "subsist:blocks/heart4",
+    "south": "subsist:blocks/heart4",
+    "west": "subsist:blocks/heart4",
+    "particle": "subsist:blocks/heart4"
+  }
+}

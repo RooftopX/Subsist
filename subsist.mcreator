@@ -268,12 +268,12 @@
       "registry_name": "hellstone_ingot"
     },
     {
-      "name": "TESTITEM",
+      "name": "TestItem2",
       "type": "block",
       "sortid": 25,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "testitem"
+      "registry_name": "test_item_2"
     }
   ],
   "variable_elements": [
@@ -298,7 +298,6 @@
     "en_us": {
       "item.subsist.heart_crystal_item": "Heart Crystal",
       "item.subsist.cooked_blue_tuna": "Cooked Blue Tuna",
-      "block.subsist.testitem": "TESTITEM",
       "subtitles.hermesbootssprintsound": "Herme\u0027s Boots Sprints",
       "item.subsist.hermes_boots_boots": "Hermes Boots",
       "item.subsist.hermes_boots_helmet": "Hermes Boots Helmet",
@@ -309,6 +308,7 @@
       "item.subsist.hermes_boots_leggings": "Hermes Boots Leggings",
       "subtitles.hermesbootsound": "Herme\"s Boots Sprinting",
       "item.subsist.hellstone_raw": "Raw Hellstone",
+      "block.subsist.test_item_2": "Test Item 2",
       "item.subsist.hermes_boots_chestplate": "Hermes Boots Body"
     }
   },
@@ -330,7 +330,6 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.17.1",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.subsist",
     "lockBaseModFiles": false
   },
