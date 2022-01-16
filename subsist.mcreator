@@ -266,6 +266,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "hellstone_ingot"
+    },
+    {
+      "name": "TESTITEM",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testitem"
     }
   ],
   "variable_elements": [
@@ -290,6 +298,7 @@
     "en_us": {
       "item.subsist.heart_crystal_item": "Heart Crystal",
       "item.subsist.cooked_blue_tuna": "Cooked Blue Tuna",
+      "block.subsist.testitem": "TESTITEM",
       "subtitles.hermesbootssprintsound": "Herme\u0027s Boots Sprints",
       "item.subsist.hermes_boots_boots": "Hermes Boots",
       "item.subsist.hermes_boots_helmet": "Hermes Boots Helmet",
