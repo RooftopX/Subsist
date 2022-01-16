@@ -266,7 +266,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "hellstone_ingot"
-<<<<<<< HEAD
     },
     {
       "name": "HellstoneOreBlockDestroyedByPlayer",
@@ -295,8 +294,49 @@
           }
         ]
       }
-=======
->>>>>>> parent of 6cb3085 (Basic Accessories Menu implementation)
+    },
+    {
+      "name": "Hellstonebrick",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellstonebrick"
+    },
+    {
+      "name": "HellstoneFurnace",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellstone_furnace"
+    },
+    {
+      "name": "HellstoneFurnaceRecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellstone_furnace_recipe"
+    },
+    {
+      "name": "HellstoneFurnaceGUI",
+      "type": "gui",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellstone_furnace_gui"
+    },
+    {
+      "name": "HellstoneFurnaceProdedure",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellstone_furnace_prodedure",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
@@ -319,8 +359,10 @@
   ],
   "language_map": {
     "en_us": {
+      "block.subsist.hellstonebrick": "Hellstone bricks",
       "item.subsist.heart_crystal_item": "Heart Crystal",
       "item.subsist.cooked_blue_tuna": "Cooked Blue Tuna",
+      "block.subsist.hellstone_furnace": "Hellstone Furnace",
       "subtitles.hermesbootssprintsound": "Herme\u0027s Boots Sprints",
       "item.subsist.hermes_boots_boots": "Hermes Boots",
       "item.subsist.hermes_boots_helmet": "Hermes Boots Helmet",

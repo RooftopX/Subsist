@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "subsist:blocks/hellstone_furnace_top",
+    "up": "subsist:blocks/hellstone_furnace_top",
+    "north": "subsist:blocks/hellstone_furnace_front",
+    "east": "subsist:blocks/hellstone_furnace_side",
+    "south": "subsist:blocks/hellstone_furnace_side",
+    "west": "subsist:blocks/hellstone_furnace_side",
+    "particle": "subsist:blocks/hellstone_furnace_top"
+  }
+}

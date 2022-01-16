@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "subsist:blocks/hellbrick",
+    "up": "subsist:blocks/hellbrick",
+    "north": "subsist:blocks/hellbrick",
+    "east": "subsist:blocks/hellbrick",
+    "south": "subsist:blocks/hellbrick",
+    "west": "subsist:blocks/hellbrick",
+    "particle": "subsist:blocks/hellbrick"
+  }
+}

@@ -34,6 +34,8 @@ public class SubsistModItems {
 	public static final Item HELLSTONE_ORE = register(SubsistModBlocks.HELLSTONE_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final Item HELLSTONE_RAW = register(new HellstoneRawItem());
 	public static final Item HELLSTONE_INGOT = register(new HellstoneIngotItem());
+	public static final Item HELLSTONEBRICK = register(SubsistModBlocks.HELLSTONEBRICK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item HELLSTONE_FURNACE = register(SubsistModBlocks.HELLSTONE_FURNACE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

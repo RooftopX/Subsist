@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "subsist:hellstone_raw"
+    },
+    "1": {
+      "item": "subsist:hellstone_raw"
+    },
+    "2": {
+      "item": "subsist:hellstone_raw"
+    },
+    "3": {
+      "item": "subsist:hellstone_raw"
+    },
+    "4": {
+      "item": "minecraft:blast_furnace"
+    },
+    "5": {
+      "item": "subsist:hellstone_raw"
+    },
+    "6": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "7": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "8": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "subsist:hellstone_furnace",
+    "count": 1
+  }
+}

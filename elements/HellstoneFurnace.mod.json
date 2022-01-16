@@ -2,15 +2,15 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "nether_hellstone_ore",
-    "textureTop": "nether_hellstone_ore",
-    "textureLeft": "nether_hellstone_ore",
-    "textureFront": "nether_hellstone_ore",
-    "textureRight": "nether_hellstone_ore",
-    "textureBack": "nether_hellstone_ore",
+    "texture": "hellstone_furnace_top",
+    "textureTop": "hellstone_furnace_top",
+    "textureLeft": "hellstone_furnace_side",
+    "textureFront": "hellstone_furnace_front",
+    "textureRight": "hellstone_furnace_side",
+    "textureBack": "hellstone_furnace_side",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 0,
+    "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Hellstone Ore",
+    "name": "Hellstone Furnace",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -43,7 +43,7 @@
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "CUSTOM:HellstoneRaw"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -99,14 +99,14 @@
     "breakHarvestLevel": 4,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "SMALL_FLAME"
+      "value": "CUSTOM:Hermesbootscloud"
     },
-    "particleSpawningShape": "Top",
+    "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "hasInventory": false,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
+    "hasInventory": true,
+    "guiBoundTo": "HellstoneFurnaceGUI",
+    "openGUIOnRightClick": true,
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
@@ -121,21 +121,16 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onDestroyedByPlayer": {
-      "name": "HellstoneOreBlockDestroyedByPlayer"
-    },
-    "spawnWorldTypes": [
-      "Nether"
-    ],
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.NETHERRACK"
+        "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 1,
-    "frequencyOnChunk": 8,
-    "minGenerateHeight": 5,
-    "maxGenerateHeight": 35
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
   }
 }
