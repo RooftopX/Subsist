@@ -266,6 +266,54 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "hellstone_ingot"
+    },
+    {
+      "name": "AccessoriesMenu",
+      "type": "gui",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accessories_menu"
+    },
+    {
+      "name": "Accessoriesmenubind",
+      "type": "keybind",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accessoriesmenubind"
+    },
+    {
+      "name": "OpenAccessoriesMenu",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_accessories_menu",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -300,6 +348,7 @@
       "item.subsist.hermes_boots_leggings": "Hermes Boots Leggings",
       "subtitles.hermesbootsound": "Herme\"s Boots Sprinting",
       "item.subsist.hellstone_raw": "Raw Hellstone",
+      "key.subsist.accessoriesmenubind": "Accessories Menu",
       "item.subsist.hermes_boots_chestplate": "Hermes Boots Body"
     }
   },
